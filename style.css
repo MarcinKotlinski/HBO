@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    background: #000;
 }
 ol, ul {
     list-style: none;
@@ -59,24 +60,21 @@ a {
 }
 #wrapper {
     width: 100%;
+    min-height:100%;
+    position:relative;
+    height: 100%;
 }
 #header {
     position: relative;
     width: 100%;
     height: 50px;
     background: #1a1a1a;
+    text-align: center;
 }
 #holder{
     margin: 0 auto;
     width: 1000px;
-}
-#header .holder {
-    width: 1000px;
-    margin: 0 auto;
     position: relative;
-}
-#header .fa:hover{
-    background: #3c3c3c;
 }
 .drop-button{
     color: #4d4d4d;
@@ -84,6 +82,9 @@ a {
 .fa{
     padding: 18px 26px;
 }
+.fa:hover{
+     background: #3c3c3c;
+ }
 #menu ul {
     list-style: none;
     margin: 0;
@@ -96,9 +97,26 @@ a {
 }
 #menu li a {
     display: block;
-    color: aqua;
-    padding: 14px 16px;
+    color: #555555;
+    padding: 17px 16px;
 }
+.number{
+    color: #84b82a;
+}
+#content{
+    margin: 0 auto;
+    width: 1000px;
+    padding-bottom:60px;
+}
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px;   /* Height of the footer */
+    background:#1a1a1a;
+}
+
+
 
 
 
