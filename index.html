@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HBO</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -11,14 +12,23 @@
 <div id="wrapper" class="clearfix">
     <div id="header">
         <div id="holder">
-            <!--<a href="#" class="drop-button">-->
-            <!--<i class="fa fa-bars"></i>-->
-            <!--</a>-->
+            <div class="holder">
+                <a href="#" class="drop-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul id="hidden">
+                    <img src="images/menu_rozwiniecie.png" alt="menuRoz">
+                    <!--<li><a href="#">Telewizja</a></li>-->
+                    <!--<li><a href="#">Internet</a></li>-->
+                    <!--<li><a href="#">Telefon</a></li>-->
+                    <!--<li><a href="#">Internet mobilny</a></li>-->
+                </ul>
+            </div>
             <div id="menu">
                 <ul id="u1">
                     <li><a href="#">CENTRUM OBSŁUGI KLIENTA</a></li>
-                    <li><a class="number" href="#">800 080 800</a></li>
-                    <li><a href="#">SZUKAJ</a></li>
+                    <li><a class="number border" href="#">800 080 800</a></li>
+                    <li><a class="border" href="#">SZUKAJ</a></li>
                     <li><a href="#">STREFA ABONENTA</a></li>
                 </ul>
             </div>
@@ -27,19 +37,91 @@
     <div id="content">
         <div class="content-items">
             <div class="photos">
-                <img src="images/pakiety.png" alt="pakiety">
-                <img src="images/vod.png" alt="vod">
-                <img src="images/teraz%20_w_tv_online.png" alt="teraz w tv" id="teraz">
-                <img src="images/zyskaj_wiecej.png" alt="Zyskaj"></li>
+                <a href="#"><img src="images/pakiety.png" alt="pakiety"></a>
+                <a href="#"><img src="images/vod.png" alt="vod"></a>
+                <a href="#"><img src="images/teraz%20_w_tv_online.png" alt="teraz w tv" id="teraz"></a>
+               <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <a href="#"><img src="images/zyskaj_wiecej.png" style="width:100%"></a>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <a href="#"><img src="images/pakiety.png" style="width:100%"></a>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <a href="#"><img src="images/zyskaj_wiecej.png" style="width:100%"></a>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
             </div>
-        </div>
+
+
+
+    </div>
     </div>
     <div id="footer">
-        <ul>
 
-
-        </ul>
+        <img src="images/stopka.png" alt="stopka">
     </div>
 </div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+
+    var dropmenu = document.querySelector('#hidden');
+
+    window.onload = function () {
+        document.querySelector('.drop-button').addEventListener("click", function(event){
+            event.preventDefault();
+            dropmenu.classList.toggle('active');
+        });
+    };
+</script>
+
 </body>
 </html>
