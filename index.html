@@ -11,8 +11,9 @@
 <body>
 <div id="wrapper" class="clearfix">
     <div id="header">
-        <div id="holder">
-            <div class="holder">
+        <div class="holder">
+            <div id="all">
+        <div id="list">
                 <a href="#" class="drop-button">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -34,54 +35,67 @@
             </div>
         </div>
     </div>
+    </div>
     <div id="content">
+        <div class="holder">
         <div class="content-items">
-            <div class="photos">
-                <a href="#"><img src="images/pakiety.png" alt="pakiety"></a>
-                <a href="#"><img src="images/vod.png" alt="vod"></a>
-                <a href="#"><img src="images/teraz%20_w_tv_online.png" alt="teraz w tv" id="teraz"></a>
-               <div class="slideshow-container">
-
+            <div class="left-col">
+                <div class="slideshow-container">
                     <div class="mySlides fade">
-                        <a href="#"><img src="images/zyskaj_wiecej.png" style="width:100%"></a>
-                        <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                        </div>
+                        <a href="#">
+                            <span>
+                                <img src="images/zyskaj_wiecej.png">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="#">
+                            <span>
+                                <img src="images/pakiety.png">
+                            </span>
+                        </a>
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="#">
+                            <span>
+                                <img src="images/zyskaj_wiecej.png">
+                            </span>
+                        </a>
                     </div>
 
-                    <div class="mySlides fade">
-                        <a href="#"><img src="images/pakiety.png" style="width:100%"></a>
-                        <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                        </div>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
 
-                    <div class="mySlides fade">
-                        <a href="#"><img src="images/zyskaj_wiecej.png" style="width:100%"></a>
-                        <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                        </div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
                 </div>
+                <div class="packets">
+                    <a href="#"><img src="images/pakiety.png" alt="pakiety"></a>
+                </div>
+            </div>
+            <div class="right-col">
+                <div class="vod">
+                    <a href="#"><img src="images/vod.png" alt="vod"></a>
+                </div>
+                <div class="online">
+                    <a href="#"><img src="images/teraz%20_w_tv_online.png" alt="teraz w tv" id="teraz"></a>
+                </div>
+            </div>
+            <div class="photos">
+
+
             </div>
 
 
 
     </div>
     </div>
+    </div>
     <div id="footer">
 
-        <img src="images/stopka.png" alt="stopka">
     </div>
 </div>
 
@@ -119,6 +133,19 @@
         document.querySelector('.drop-button').addEventListener("click", function(event){
             event.preventDefault();
             dropmenu.classList.toggle('active');
+        });
+
+        var prevButton = document.querySelector('.slideshow-container .prev');
+        var nextButton = document.querySelector('.slideshow-container .next');
+        console.log(prevButton);
+
+        prevButton.addEventListener("click", function(event){
+            event.preventDefault();
+            plusSlides(-1)
+        });
+        nextButton.addEventListener("click", function(event){
+            event.preventDefault();
+            plusSlides(1)
         });
     };
 </script>
