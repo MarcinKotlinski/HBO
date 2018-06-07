@@ -391,25 +391,205 @@ images {
     font-size: 33px;
 }
 
-.bottom-left-after{
+.bottom-left-after {
     position: absolute;
     left: 177px;
     bottom: 4px;
     color: #aa2755;
     font-size: 40px;
 }
-.img-center-left{
+
+.img-center-left {
     position: absolute;
     width: 50%;
     left: 13px;
     top: 57%;
     transform: translate(-50%, -50%);
 }
+
+.right .top-sentence {
+    position: absolute;
+    top: 3px;
+    right: 4px;
+    color: #555555;
+    font-size: 11px;
+}
+
+/*.right{*/
+/*position: absolute;*/
+/*text-align: right;*/
+/*}*/
+.zadzwon {
+    position: absolute;
+    font-size: 10px;
+    right: 4px;
+    top: 23px;
+    color: #84b82a;
+}
+
+.phone-number {
+    position: absolute;
+    font-size: 21px;
+    right: 4px;
+    top: 33px;
+    color: #84b82a;
+}
+
+.phone-number:before {
+    content: url("images/stopka/telefon.png");
+    width: 70%;
+    margin-right: 10px;
+}
+
+.below-sentence {
+    position: absolute;
+    top: 72px;
+    right: 4px;
+    color: #555555;
+    font-size: 11px;
+}
+
+.lower-phone {
+    position: absolute;
+    font-size: 17px;
+    right: 4px;
+    top: 86px;
+    color: #84b82a;
+}
+
+.lowest-sentence {
+    position: absolute;
+    top: 110px;
+    right: 4px;
+    color: #555555;
+    font-size: 8px;
+}
+
+.centrum .top-sentence {
+    position: absolute;
+    top: 9px;
+    right: 37%;
+    color: #555555;
+    font-size: 11px;
+    transform: translate(-50%, -50%);
+}
+
+.centrum .zadzwon {
+    position: absolute;
+    font-size: 10px;
+    right: 45%;
+    top: 23px;
+    color: #84b82a;
+}
+
+.centrum .phone-number {
+    position: absolute;
+    font-size: 21px;
+    right: 45%;
+    top: 33px;
+    color: #84b82a;
+}
+
+.centrum .phone-number:before {
+    content: url("images/stopka/telefon.png") url("images/stopka/komorka.png");
+    width: 70%;
+    margin-right: 15px;
+}
+
+.centrum .lowest-sentence {
+    position: absolute;
+    top: 68px;
+    right: 45%;
+    color: #555555;
+    font-size: 8px;
+}
+
+.lewa .top-sentence {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    color: #555555;
+    font-size: 11px;
+}
+
+.lewa .zadzwon {
+    position: absolute;
+    font-size: 14px;
+    left: 67px;
+    top: 37px;
+    color: #4d3c6c;
+}
+
+.lewa .phone-number {
+    position: absolute;
+    font-size: 21px;
+    left: -9px;
+    top: 33px;
+    color: #4d3c6c;
+}
+
+.lewa .phone-number:before {
+    content: url("images/stopka/tablet.png");
+    width: 70%;
+    margin-right: 10px;
+}
+
+.line {
+    position: absolute;
+    left: 4px;
+    top: 107px;
+}
+
+.facebook {
+    position: absolute;
+    top: 123px;
+    right: 55%;
+}
+
+.twitter {
+    position: absolute;
+    top: 123px;
+    right: 50%;
+}
+
+.youtube {
+    position: absolute;
+    top: 123px;
+    right: 45%;
+}
+
+.menu ul {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+    left: 4px;
+}
+
+.menu li .border {
+    /* border-right: 1px solid #555555; */
+}
+
+.menu li .border:after {
+    content: "|";
+    margin-left: 27px;
+}
+
+.menu li a {
+    display: block;
+    color: #555555;
+    padding: 3px 6px;
+}
+
 #footer {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 131px;
+    height: 172px;
     background: #1a1a1a;
 }
 
