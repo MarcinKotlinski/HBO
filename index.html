@@ -13,86 +13,122 @@
     <div id="header">
         <div class="holder">
             <div id="all">
-        <div id="list">
-                <a href="#" class="drop-button">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <ul id="hidden">
-                    <img src="images/menu_rozwiniecie.png" alt="menuRoz">
-                    <!--<li><a href="#">Telewizja</a></li>-->
-                    <!--<li><a href="#">Internet</a></li>-->
-                    <!--<li><a href="#">Telefon</a></li>-->
-                    <!--<li><a href="#">Internet mobilny</a></li>-->
-                </ul>
-            </div>
-            <div id="menu">
-                <ul id="u1">
-                    <li><a href="#">CENTRUM OBSŁUGI KLIENTA</a></li>
-                    <li><a class="number border" href="#">800 080 800</a></li>
-                    <li><a class="border" href="#">SZUKAJ</a></li>
-                    <li><a href="#">STREFA ABONENTA</a></li>
-                </ul>
+                <div id="list">
+                    <a href="#" class="drop-button">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <ul id="hidden">
+                        <img src="images/menu_rozwiniecie.png" alt="menuRoz">
+                        <!--<li><a href="#">Telewizja</a></li>-->
+                        <!--<li><a href="#">Internet</a></li>-->
+                        <!--<li><a href="#">Telefon</a></li>-->
+                        <!--<li><a href="#">Internet mobilny</a></li>-->
+                    </ul>
+                </div>
+                <div id="menu">
+                    <ul id="u1">
+                        <li><a href="#">CENTRUM OBSŁUGI KLIENTA</a></li>
+                        <li><a class="number border" href="#">800 080 800</a></li>
+                        <li><a class="border" href="#">SZUKAJ</a></li>
+                        <li><a href="#">STREFA ABONENTA</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    </div>
     <div id="content">
         <div class="holder">
-        <div class="content-items">
-            <div class="left-col">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <a href="#">
-                            <span>
+            <div class="content-items">
+                <div class="left-col">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <a href="#">
+                            <span class="zyskaj">
                                 <img src="images/zyskaj_wiecej.png">
+                                <div class="top-left"><strong>ZYSKAJ WIĘCEJ</strong></div>
+                                <div class="bottom-left">DOSTANIESZ ZA</div>
+                                <div class="over-bottom-left">A <strong style="color: #4d3c6c">HBO</strong>GO</div>
+                                <div class="over-over-bottom-left">KUP INTERNET,</div>
+                                <div class="bottom-left-after"><strong style="font-size: 70px">1</strong>zł</div>
+
                             </span>
-                        </a>
-                    </div>
-                    <div class="mySlides fade">
-                        <a href="#">
+                            </a>
+                        </div>
+                        <div class="mySlides fade">
+                            <a href="#">
                             <span>
                                 <img src="images/pakiety.png">
                             </span>
-                        </a>
-                    </div>
-                    <div class="mySlides fade">
-                        <a href="#">
+                            </a>
+                        </div>
+                        <div class="mySlides fade">
+                            <a href="#">
                             <span>
                                 <img src="images/zyskaj_wiecej.png">
                             </span>
-                        </a>
+                            </a>
+                        </div>
+                        <div id="dots">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
                     </div>
-
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
+                    <div class="packets">
+                        <a href="#"><img src="images/pakiety.png" alt="pakiety"></a>
+                        <div class="top-left"><strong>STWÓRZ SWÓJ WŁASNY PAKIET</strong></div>
+                        <div class="below-top-left"><strong>TELEWIZJA - INTERNET - TELEFON</strong></div>
+                        <div class="bottom">lub wybierz pakiet przygotowany przez nas</div>
+                        <div class="over-bottom" href="#"><strong>STWÓRZ PAKIET</strong></div>
+                        <div class="images">
+                            <ul>
+                                <li><img src="images/packets/obraz1.png"></li>
+                                <p>WYBIERZ<br><strong>ULUBIONE<br>KANAŁY TV</strong></p>
+                                <li><img class="plus" src="images/packets/plus.png"></li>
+                                <li><img src="images/packets/obraz2.png"></li>
+                                <p>WYBIERZ<br><strong>PRĘDKOŚĆ<br>INTERNETU</strong></p>
+                                <li><img class="plus" src="images/packets/plus.png"></li>
+                                <li><img src="images/packets/obraz3.png"></li>
+                                <p>WYBIERZ<br><strong>ILOŚĆ MINUT<br>NA ROZMOWY</strong></p>
+                                <li><img class="plus" src="images/packets/plus.png"></li>
+                                <li><img src="images/packets/obraz4.png"></li>
+                                <p>WYBIERZ<br><strong>INTERNET<br>MOBILNY</strong></p>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                <div class="right-col">
+                    <div class="vod">
+                        <a href="#"><img src="images/vod.png" alt="vod"></a>
+                        <div class="top-left"><strong>VOD</strong></div>
+                        <div class="below-top-left"><strong>VIDEO NA ŻĄDANIE</strong></div>
+                        <div class="bottom-left">NOWOŚCI - AKCJA  14,00 zŁ</div>
+                        <div class="over-bottom-left">Kapitan Ameryka:<br>Zimowy Żołnierz</div>
+                        <div class="bottom-right">TERAZ<br>OGLĄDA<br><strong>125</strong></div>
+                        <div class="center-left" href="#"><img src="images/teraz_online/lewo.png"></div>
+                        <div class="center-right" href="#"><img src="images/teraz_online/prawo.png"></div>
+                        <div class="img-below" href="#"><img src="images/teraz_online/ludzie.png"></div>
+                    </div>
+                    <div class="online">
+                        <a href="#"><img src="images/teraz%20_w_tv_online.png" alt="teraz w tv" id="teraz"></a>
+                        <div class="top-left"><strong>TERAZ<br>W TV ONLINE</strong></div>
+                        <div class="bottom">DISCOVERY CHANNEL</div>
+                        <div class="over-bottom" href="#"><strong>Anatomia Magii</strong></div>
+                        <div class="top-right" href="#">TERAZ<br>OGLĄDA<br><strong>258</strong></div>
+                        <div class="center-left" href="#"><img src="images/teraz_online/lewo.png"></div>
+                        <div class="center-right" href="#"><img src="images/teraz_online/prawo.png"></div>
+                        <div class="center" href="#"><img src="images/teraz_online/play.png"></div>
+                        <div class="center" href="#"><img src="images/teraz_online/koło.png"></div>
+                        <div class="img-top"><img src="images/teraz_online/ludzie.png"></div>
+                    </div>
+                </div>
+                <div class="photos">
 
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
                 </div>
-                <div class="packets">
-                    <a href="#"><img src="images/pakiety.png" alt="pakiety"></a>
-                </div>
+
+
             </div>
-            <div class="right-col">
-                <div class="vod">
-                    <a href="#"><img src="images/vod.png" alt="vod"></a>
-                </div>
-                <div class="online">
-                    <a href="#"><img src="images/teraz%20_w_tv_online.png" alt="teraz w tv" id="teraz"></a>
-                </div>
-            </div>
-            <div class="photos">
-
-
-            </div>
-
-
-
-    </div>
-    </div>
+        </div>
     </div>
     <div id="footer">
 
@@ -115,37 +151,28 @@
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
     }
 
     var dropmenu = document.querySelector('#hidden');
 
     window.onload = function () {
-        document.querySelector('.drop-button').addEventListener("click", function(event){
+        document.querySelector('.drop-button').addEventListener("click", function (event) {
             event.preventDefault();
             dropmenu.classList.toggle('active');
-        });
-
-        var prevButton = document.querySelector('.slideshow-container .prev');
-        var nextButton = document.querySelector('.slideshow-container .next');
-        console.log(prevButton);
-
-        prevButton.addEventListener("click", function(event){
-            event.preventDefault();
-            plusSlides(-1)
-        });
-        nextButton.addEventListener("click", function(event){
-            event.preventDefault();
-            plusSlides(1)
         });
     };
 </script>
