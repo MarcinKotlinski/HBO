@@ -84,7 +84,7 @@ a {
 
 .holder {
     margin: 0 auto;
-    width: 1000px;
+    width: 1200px;
     position: relative;
 }
 
@@ -147,10 +147,6 @@ a {
     padding: 30px;
 }
 
-#hidden {
-    width: 281px;
-}
-
 .drop-button {
     display: block;
 }
@@ -158,9 +154,10 @@ a {
 .drop-button + ul {
     display: none;
     position: absolute;
+    z-index: 2;
     top: 50px;
-    right: 719px;
-    width: 100%;
+    left: 0;
+    width: 281px;
     background: #1a1a1a;
     color: #fff;
 }
@@ -202,6 +199,77 @@ a {
 
 .packets {
     position: relative;
+    background: #675190;
+    color: #fff;
+    padding: 30px;
+}
+.packets h2,
+.packets h3 {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.packets h2 {
+    font-size: 40px;
+}
+.packets h3 {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.list-icons {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.list-icons li {
+    float: left;
+    width: 25%;
+    padding-left: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    background: url("images/packets/plus.png") no-repeat 0 55px;
+}
+.list-icons li:first-child {
+    background: none;
+    padding-left: 0;
+}
+.list-icons li p {
+    display: inline-block;
+    width: 135px;
+    padding-top: 120px;
+}
+.list-icons li span {
+    width: 90px;
+    display: inline-block;
+}
+.list-icons .channels p {
+    background: url("images/packets/obraz1.png") no-repeat 50% 0;
+}
+.list-icons .internet p {
+    background: url("images/packets/obraz2.png") no-repeat 50% 0;
+}
+.list-icons .telephone p {
+    background: url("images/packets/obraz3.png") no-repeat 50% 0;
+}
+.list-icons .mobile p {
+     background: url("images/packets/obraz4.png") no-repeat 50% 0;
+}
+.button-holder {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.button-holder .pack-button {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 460px;
+    display: inline-block;
+    background: #4d3c6c;
+    border: 2px solid #fff;
+    padding: 10px 0;
+    margin: 0 0 10px;
 }
 
 .top-left {

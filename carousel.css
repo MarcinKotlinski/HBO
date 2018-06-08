@@ -18,7 +18,7 @@ body {
 }
 
 .mySlides img {
-    margin-left: 37%;
+    margin-left: 50%;
     transform: translateX(-50%);
 }
 
@@ -28,14 +28,15 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    width: 800px;
+    overflow: hidden;
     position: relative;
     margin: auto;
 }
 
 .slideshow-container img {
-    height: 364px;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 /* Next & previous buttons */
@@ -99,9 +100,10 @@ img {
 
 #dots {
     text-align: center;
-    width: 600px;
     margin: 0;
     position: absolute;
+    bottom: 17px;
+    right: 15px;
 }
 
 .active, .dot:hover {
