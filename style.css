@@ -205,7 +205,6 @@ a {
 .packets h2,
 .packets h3 {
     text-transform: uppercase;
-    letter-spacing: -1px;
 }
 
 .packets h2 {
@@ -272,11 +271,11 @@ a {
 }
 .vod{
     position: relative;
-    background: url("images/vod.png");
+    background: url("images/vod.png") no-repeat;
     color: #fff;
     padding: 30px;
 }
-.vod h2,h3{
+.vod h2,h3,h4{
     text-transform: uppercase;
 }
 .vod h2{
@@ -284,6 +283,40 @@ a {
 }
 .vod h3{
     font-size: 14px;
+    margin-bottom: 130px;
+}
+.vod h4{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.arrow-list{
+    margin-bottom: 128px;
+    overflow: hidden;
+    z-index: 2;
+}
+.arrow-list li{
+    float: left;
+    padding-left: 295px; 
+}
+.arrow-list li:first-child{
+    float: left
+}
+.arrow-list li:nth-child(2){
+    float: right
+}
+.left-arrow{
+    background: url("images/teraz_online/lewo.png")
+}
+.right-arrow{
+    background: url("images/teraz_online/prawo.png")
+}
+.arrow-left-col{
+    float: left;
+    width: 264px;
+}
+.arrow-right-col{
+    float: right;
+    width: 77px;
 }
 .top-left {
     position: absolute;
