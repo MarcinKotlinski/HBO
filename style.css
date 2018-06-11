@@ -175,7 +175,6 @@ a {
 #content {
     margin: 0 auto;
     width: 1200px;
-    padding-top: 60px;
     padding-bottom: 188px;
 }
 
@@ -271,7 +270,21 @@ a {
     padding: 10px 0;
     margin: 0 0 10px;
 }
-
+.vod{
+    position: relative;
+    background: url("images/vod.png");
+    color: #fff;
+    padding: 30px;
+}
+.vod h2,h3{
+    text-transform: uppercase;
+}
+.vod h2{
+    font-size: 40px;
+}
+.vod h3{
+    font-size: 14px;
+}
 .top-left {
     position: absolute;
     top: 14px;
@@ -337,7 +350,7 @@ images {
     width: 13% !important;
 }
 
-.vod {
+.vod2 {
     position: relative;
 }
 
@@ -409,7 +422,7 @@ images {
     font-size: 16px;
 }
 
-.vod .over-bottom-left:after {
+.vod2 .over-bottom-left:after {
     content: "|";
     margin-left: 74px;
 }
