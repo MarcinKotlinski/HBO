@@ -2,36 +2,40 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-  }
-  .slider .mask {
+}
+
+.slider .mask {
     width: 400px;
     height: 477px;
     overflow: hidden;
     position: relative;
-  }
-  .slider ul {
+}
+
+.slider ul {
     width: 99999px;
     float: left;
     transition: margin-left 500ms ease-in-out;
-  }
-  .slider ul li {
+}
+
+.slider ul li {
     float: left;
-  }
-  .arrow-left,
-  .arrow-right {
+}
+
+.arrow-left,
+.arrow-right {
     z-index: 9;
-  }
-  
-  .arrow-left {
+}
+
+.arrow-left {
     position: absolute;
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-  }
-  
-  .arrow-right {
+}
+
+.arrow-right {
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-  }
+}

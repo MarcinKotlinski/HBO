@@ -34,7 +34,7 @@ function slideGallery() {
     var slidesNumber = slideItems.length;
     var slidesWidth = slideItems[0].offsetWidth; // getting width by first element
     var currentSlide = 0; // active slide indicator
-    
+
     // lets set our slides ul width by slides number;
     var slidesListWidth = slidesWidth * slidesNumber;
     slidesList.style.width = slidesListWidth + "px";
@@ -77,7 +77,7 @@ function slideGallery() {
         for (item of slideItems) {
             item.classList.remove('active');
         }
-        
+
         // set active class
         slideItems[currentSlide].classList.add('active');
     }
