@@ -3,49 +3,132 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
 }
 
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {}
 
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     padding: 0;
     margin: 0;
@@ -71,7 +154,7 @@ a {
 #header {
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 80px;
     background: #1a1a1a;
     text-align: left;
 }
@@ -93,7 +176,8 @@ a {
 }
 
 .fa {
-    padding: 18px 48px;
+    padding: 33px 48px;
+    color: #fff;
 }
 
 .fa:hover {
@@ -104,6 +188,7 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-top: 20px;
     overflow: hidden;
 }
 
@@ -112,19 +197,32 @@ a {
     margin-left: 20px;
 }
 
-#menu li .border {
-    /* border-right: 1px solid #555555; */
-}
-
 #menu li .border:after {
     content: "|";
     margin-left: 27px;
+    color: #555555;
+}
+
+#menu li .number::before{
+    content: url(images/naglowek/tele.png);
+    margin-right: 10px;
+}
+
+#menu li .lupa::before{
+    content: url(images/naglowek/lupa.png);
+    margin-right: 10px;
+}
+
+#menu li .person::before{
+    content: url(images/naglowek/pearson.png);
+    margin-right: 10px;
 }
 
 #menu li a {
     display: block;
     color: #555555;
-    padding: 3px 6px;
+    font-size: 15px;
+    padding: 0px 6px;
 }
 
 #menu li a:hover {
@@ -151,18 +249,18 @@ a {
     display: block;
 }
 
-.drop-button + ul {
+.drop-button+ul {
     display: none;
     position: absolute;
     z-index: 2;
-    top: 50px;
+    top: 80px;
     left: 0;
     width: 281px;
     background: #1a1a1a;
     color: #fff;
 }
 
-.drop-button + ul.active {
+.drop-button+ul.active {
     display: block;
 }
 
@@ -185,6 +283,7 @@ a {
 .left-col {
     float: left;
     width: 800px;
+    margin-bottom: 213px;
 }
 
 .right-col {
@@ -196,12 +295,152 @@ a {
     width: 75%;
 }
 
+.zyskaj {
+    position: relative;
+    background: url("images/zyskaj_wiecej.png") no-repeat;
+    color: #fff;
+    padding: 32px;
+    padding-bottom: 35px;
+}
+
+.zyskaj h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+.zyskaj h2 {
+    font-size: 40px;
+    margin-bottom: 159px;
+}
+
+.mouse_present{
+    display: inline-block;
+}
+
+.mouse_present img{
+    width: 29% !important;
+    margin-left: 2% !important;
+    padding: 0 10px;
+}
+
+#mouse{
+    border: 2px solid #86acbb;
+    padding: 4px 9px;
+    border-radius: 200px;
+}
+
+#present{
+    border: 2px solid #86acbb;
+    padding: 7px;
+    border-radius: 200px;
+}
+
+.zyskaj h3 {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.color {
+    color: #675190
+}
+
+.zyskaj h1 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#zyskaj_1{
+    color: #aa2755;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+#zyskaj_zl{
+    color: #aa2755;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.zyskaj h1,h3{
+    line-height: 48px;
+}
+
+.vod {
+    position: relative;
+    background: url("images/vod.png") no-repeat;
+    color: #fff;
+    padding: 30px;
+    padding-bottom: 25px;
+}
+
+.vod h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+.vod h2 {
+    font-size: 40px;
+}
+
+.vod h3 {
+    font-size: 14px;
+    margin-bottom: 264px;
+    line-height: 122% !important;
+}
+
+.vod h4 {
+    font-size: 25px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.vod h5{
+    color: #5c5c5c;
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+
+.vod h6 {
+    font-size: 14px;
+    color: #84b82a;
+    text-transform: uppercase;
+}
+
+#vod_14{
+    color: #2c8fbd;
+    margin-left: 17px;
+}
+
+.vod .online-right img{
+    width: 40%;
+}
+
+.vod .online-right{
+    line-height: 22px;
+}
+
+.arrow-left-col {
+    float: left;
+    width: 264px;
+}
+
+.arrow-right-col {
+    float: right;
+    width: 77px;
+}
+
 .packets {
     position: relative;
     background: #675190;
     color: #fff;
-    padding: 30px;
+    padding: 19px;
+    padding-left: 30px;
+    height: 82%;
 }
+
 .packets h2,
 .packets h3 {
     text-transform: uppercase;
@@ -210,13 +449,15 @@ a {
 .packets h2 {
     font-size: 40px;
 }
+
 .packets h3 {
     font-size: 14px;
-    margin-bottom: 30px;
+    margin-bottom: 17px;
+    line-height: 19px !important;
 }
 
 .list-icons {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     overflow: hidden;
 }
 
@@ -228,36 +469,45 @@ a {
     text-transform: uppercase;
     background: url("images/packets/plus.png") no-repeat 0 55px;
 }
+
 .list-icons li:first-child {
     background: none;
     padding-left: 0;
 }
+
 .list-icons li p {
     display: inline-block;
     width: 135px;
     padding-top: 120px;
 }
+
 .list-icons li span {
     width: 90px;
     display: inline-block;
 }
+
 .list-icons .channels p {
     background: url("images/packets/obraz1.png") no-repeat 50% 0;
 }
+
 .list-icons .internet p {
     background: url("images/packets/obraz2.png") no-repeat 50% 0;
 }
+
 .list-icons .telephone p {
     background: url("images/packets/obraz3.png") no-repeat 50% 0;
 }
+
 .list-icons .mobile p {
-     background: url("images/packets/obraz4.png") no-repeat 50% 0;
+    background: url("images/packets/obraz4.png") no-repeat 50% 0;
 }
+
 .button-holder {
     text-align: center;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
 }
+
 .button-holder .pack-button {
     color: #fff;
     font-weight: bold;
@@ -269,505 +519,146 @@ a {
     padding: 10px 0;
     margin: 0 0 10px;
 }
-.vod{
-    position: relative;
-    background: url("images/vod.png") no-repeat;
-    color: #fff;
-    padding: 30px;
-}
-.vod h2,h3,h4{
-    text-transform: uppercase;
-}
-.vod h2{
-    font-size: 40px;
-}
-.vod h3{
-    font-size: 14px;
-    margin-bottom: 130px;
-}
-.vod h4{
-    font-size: 25px;
-    padding-bottom: 10px;
-}
-.arrow-list{
-    margin-bottom: 128px;
-    overflow: hidden;
-    z-index: 2;
-}
-.arrow-list li{
-    float: left;
-    padding-left: 295px; 
-}
-.arrow-list li:first-child{
-    float: left
-}
-.arrow-list li:nth-child(2){
-    float: right
-}
-.left-arrow{
-    background: url("images/teraz_online/lewo.png")
-}
-.right-arrow{
-    background: url("images/teraz_online/prawo.png")
-}
-.arrow-left-col{
-    float: left;
-    width: 264px;
-}
-.arrow-right-col{
-    float: right;
-    width: 77px;
-}
-.top-left {
-    position: absolute;
-    top: 14px;
-    left: 14px;
-    color: #fff;
-    font-size: 26px;
-}
-
-.below-top-left {
-    position: absolute;
-    top: 41px;
-    left: 14px;
-    color: #fff;
-    font-size: 9px;
-}
-
-.bottom {
-    position: absolute;
-    bottom: 14px;
-    font-size: 13px;
-    color: #fff;
-    left: 37%;
-    transform: translate(-50%, -50%);
-}
-
-.over-bottom {
-    position: absolute;
-    bottom: 26px;
-    font-size: 15px;
-    color: #fff;
-    left: 37%;
-    transform: translate(-50%, -50%);
-    padding: 6px 59px;
-    background: #4d3c6c;
-    border: #fff 2px;
-}
-
-images {
-    position: absolute;
-    text-align: justify;
-    left: 37%;
-    transform: translate(-50%, -50%);
-}
-
-.images img {
-    display: inline-block;
-}
-
-.images ul {
-    text-align: center;
-    display: inline-block;
-    position: absolute;
-
-}
-
-.images p {
-    color: #fff;
-    font-size: 12px;
-    margin-top: 3px;
-}
-
-.plus {
-    width: 13% !important;
-}
-
-.vod2 {
-    position: relative;
-}
 
 .online {
     position: relative;
-}
-
-.online .over-bottom {
-    background: transparent;
-}
-
-.online .bottom {
-    color: #84b82a;
-}
-
-.online .top-left:after {
-    content: "|";
-    margin-left: 7px;
-
-}
-
-.top-right {
-    position: absolute;
-    top: 18px;
-    right: 119px;
+    background: url("images/teraz\ _w_tv_online.png") no-repeat;
     color: #fff;
+    padding: 30px;
+}
+
+.online-column {
+    display: inline-block;
+}
+
+.online-left{
+  width: 280px;
+  text-align: left;
+}
+
+.online-right {
+    width: 53px;
     text-align: center;
-    font-size: 8px;
+    line-height: 20px;
 }
 
-.online .top-right:below-level {
-
+.online-right p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.center-left {
-    position: absolute;
-    left: 20px;
-    top: 58%;
-    transform: translate(-50%, -50%);
+.online-right h5{
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 15px;
+    margin-bottom: 5px;
 }
 
-.center-right {
-    position: absolute;
-    right: 89px;
-    top: 58%;
-    transform: translate(-50%, -50%);
+.online #ludzie{
+    width: 40%;
 }
 
-.center {
-    position: absolute;
-    left: 40%;
-    top: 57%;
-    transform: translate(-50%, -50%);
+.online h2, h3, 
+h4 {
+    text-transform: uppercase;
 }
 
-.bottom-left {
-    position: absolute;
-    left: 14px;
-    bottom: 14px;
-    color: #84b82a;
-    font-size: 9px;
-}
-
-.over-bottom-left {
-    position: absolute;
-    left: 14px;
-    bottom: 28px;
-    color: #fff;
-    font-size: 16px;
-}
-
-.vod2 .over-bottom-left:after {
-    content: "|";
-    margin-left: 74px;
-}
-
-.bottom-right {
-    position: absolute;
-    bottom: 34px;
-    right: 121px;
-    color: #fff;
-    text-align: center;
-    font-size: 8px;
-}
-
-.img-below {
-    position: absolute;
-    right: 124px;
-    bottom: 16px;
-}
-
-.img-top {
-    position: absolute;
-    right: 122px;
-    top: 48px;
-}
-
-.zyskaj .over-bottom-left {
-    position: absolute;
-    left: 14px;
-    bottom: 38px;
-    color: #fff;
-    font-size: 31px;
-}
-
-.zyskaj .bottom-left {
-    position: absolute;
-    left: 14px;
-    bottom: 14px;
-    color: #fff;
-    font-size: 19px;
-}
-
-.over-over-bottom-left {
-    position: absolute;
-    left: 14px;
-    bottom: 73px;
-    color: #fff;
-    font-size: 33px;
-}
-
-.bottom-left-after {
-    position: absolute;
-    left: 177px;
-    bottom: 4px;
-    color: #aa2755;
+.online h2 {
     font-size: 40px;
+    line-height: 38px;
+    margin-bottom:  230px;
 }
 
-.img-center-left {
-    position: absolute;
-    width: 50%;
-    left: 13px;
-    top: 57%;
-    transform: translate(-50%, -50%);
+.online h3{
+    font-size: 25px;
+    text-transform: none;
+    font-weight: normal;
+    text-align: center;
+    line-height: 41px !important;
 }
 
-.right .top-sentence {
-    position: absolute;
-    top: 3px;
-    right: 4px;
-    color: #555555;
-    font-size: 11px;
-}
-
-/*.right{*/
-/*position: absolute;*/
-/*text-align: right;*/
-/*}*/
-.zadzwon {
-    position: absolute;
-    font-size: 10px;
-    right: 4px;
-    top: 23px;
-    color: #84b82a;
-}
-
-.phone-number {
-    position: absolute;
-    font-size: 21px;
-    right: 4px;
-    top: 33px;
-    color: #84b82a;
-}
-
-.phone-number:before {
-    content: url("images/stopka/telefon.png");
-    width: 70%;
-    margin-right: 10px;
-}
-
-.below-sentence {
-    position: absolute;
-    top: 72px;
-    right: 4px;
-    color: #555555;
-    font-size: 11px;
-}
-
-.lower-phone {
-    position: absolute;
-    font-size: 17px;
-    right: 4px;
-    top: 86px;
-    color: #84b82a;
-}
-
-.lowest-sentence {
-    position: absolute;
-    top: 110px;
-    right: 4px;
-    color: #555555;
-    font-size: 8px;
-}
-
-.centrum .top-sentence {
-    position: absolute;
-    top: 9px;
-    right: 37%;
-    color: #555555;
-    font-size: 11px;
-    transform: translate(-50%, -50%);
-}
-
-.centrum .zadzwon {
-    position: absolute;
-    font-size: 10px;
-    right: 45%;
-    top: 23px;
-    color: #84b82a;
-}
-
-.centrum .phone-number {
-    position: absolute;
-    font-size: 21px;
-    right: 45%;
-    top: 33px;
-    color: #84b82a;
-}
-
-.centrum .phone-number:before {
-    content: url("images/stopka/telefon.png") url("images/stopka/komorka.png");
-    width: 70%;
-    margin-right: 15px;
-}
-
-.centrum .lowest-sentence {
-    position: absolute;
-    top: 68px;
-    right: 45%;
-    color: #555555;
-    font-size: 8px;
-}
-
-.lewa .top-sentence {
-    position: absolute;
-    top: 3px;
-    left: 4px;
-    color: #555555;
-    font-size: 11px;
-}
-
-.lewa .zadzwon {
-    position: absolute;
+.online h4{
     font-size: 14px;
-    left: 67px;
-    top: 37px;
-    color: #4d3c6c;
-}
-
-.lewa .phone-number {
-    position: absolute;
-    font-size: 21px;
-    left: -9px;
-    top: 33px;
-    color: #4d3c6c;
-}
-
-.lewa .phone-number:before {
-    content: url("images/stopka/tablet.png");
-    width: 70%;
-    margin-right: 10px;
-}
-
-.line {
-    position: absolute;
-    left: 4px;
-    top: 107px;
-}
-
-.facebook {
-    position: absolute;
-    top: 123px;
-    right: 55%;
-}
-
-.twitter {
-    position: absolute;
-    top: 123px;
-    right: 50%;
-}
-
-.youtube {
-    position: absolute;
-    top: 123px;
-    right: 45%;
-}
-
-.menu ul {
-    list-style: none;
-    margin-top: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.menu li {
-    float: left;
-    left: 4px;
-}
-
-.menu li .border {
-    /* border-right: 1px solid #555555; */
-}
-
-.menu li .border:after {
-    content: "|";
-    margin-left: 27px;
-}
-
-.menu li a {
-    display: block;
-    color: #555555;
-    padding: 3px 6px;
-}
-@keyframes slider {
-
-    0% {
-        left: 0;
-    }
-
-    20% {
-        left: 0;
-    }
-
-    25% {
-        left: -100%;
-    }
-
-    45% {
-        left: -100%;
-
-    }
-
-    50% {
-        left: -200%;
-
-    }
-
-    70% {
-        left: -200%;
-    }
-
-    75% {
-        left: -300%;
-    }
-
-    95% {
-        left: -300%;
-    }
-
-    100% {
-        left: -400%;
-
-    }
-
-}
-
-#slider {
-    overflow: hidden;
-}
-
-#slider figure img {
-    width: 20%;
-    float: left;
-}
-
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 10s slider infinite;
-
+    color: #84b82a;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 #footer {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 172px;
+    height: 350px;
     background: #1a1a1a;
+    color: #fff;
+    line-height: 28px;
 }
 
+.column {
+    padding: 10px;
+    height: 172px;
+    display: inline-block;
+}
 
+.left, .right, .middle {
+    width: 33%;
+}
 
+.left{
+    text-align: left;
+}
+
+.right, .middle{
+    text-align: right;
+}
+.column h2{
+    color: #535353;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.column h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #84b82a;
+    line-height: 41px !important;
+}
+.left h3{
+    color: #4d3c6c;
+    margin-left: 78px;
+}
+.column h4{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #84b82a;
+}
+.left h4{
+    color: #4d3c6c;
+}
+.middle p{
+    padding-top: 12px;
+    color: #535353;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.middle h5{
+    color: #84b82a;
+    font-size: 20px;
+}
+.column h6{
+    font-size: 11px;
+    color: #5c5c5c;
+}
+.left h4::before{
+    content: url(images/stopka/tablet.png);
+    margin-right: 10px;
+}
+.right h4::before{
+    content: url(images/stopka/telefon.png) url(images/stopka/komorka.png);
+    padding: 0 10px;
+}
+.middle h4::before{
+    content: url(images/stopka/telefon.png);
+    padding: 0 10px;
+}
