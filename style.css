@@ -173,6 +173,7 @@ a {
 
 .drop-button {
     color: #4d4d4d;
+    width: 40px;
 }
 
 .fa {
@@ -306,11 +307,13 @@ h4 {
 
 .zyskaj h2 {
     font-size: 40px;
-    margin-bottom: 159px;
+    margin-bottom: 146px;
 }
 
 .mouse_present {
     display: inline-block;
+    padding-bottom: 12px;
+    padding-left: 15px;
 }
 
 .mouse_present img {
@@ -366,7 +369,7 @@ h4 {
     background: url("images/vod.png") no-repeat;
     color: #fff;
     padding: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 29px;
 }
 
 .vod h2,
@@ -381,7 +384,7 @@ h4 {
 
 .vod h3 {
     font-size: 14px;
-    margin-bottom: 264px;
+    margin-bottom: 259px;
     line-height: 122% !important;
 }
 
@@ -420,7 +423,7 @@ h4 {
     position: relative;
     background: #675190;
     color: #fff;
-    padding: 19px;
+    padding: 23px;
     padding-left: 30px;
     height: 82%;
 }
@@ -436,12 +439,12 @@ h4 {
 
 .packets h3 {
     font-size: 14px;
-    margin-bottom: 17px;
+    margin-bottom: 14px;
     line-height: 19px !important;
 }
 
 .list-icons {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     overflow: hidden;
 }
 
@@ -550,7 +553,7 @@ h4 {
 
 .online h2 {
     font-size: 40px;
-    line-height: 38px;
+    line-height: 41px;
     margin-bottom: 230px;
 }
 
@@ -580,13 +583,16 @@ h4 {
 }
 
 .column {
-    padding: 10px 0;
-    height: 172px;
-    display: inline-block;
+    padding: 15px 0 0;
 }
 
-.left, .right, .middle {
-    width: 33%;
+.column.left {
+    float: left;
+    width: 800px;
+}
+.column.right {
+    float: right;
+    width: 250px;
 }
 
 .left {
@@ -611,10 +617,43 @@ h4 {
 }
 
 .left h3 {
-    color: #4d3c6c;
+    color: #84b82a;
     margin-left: 78px;
 }
 
+.app-link {
+    display: block;
+    width: 260px;
+    background: url(images/stopka/tablet.png) no-repeat 0 5px;
+    padding: 0 0 0 80px;
+    min-height: 50px;
+    color: #76639b;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 23px;
+}
+.app-link span {
+    display: block;
+    font-size: 14px;
+}
+.app-link strong {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+#footer .row {
+    overflow: hidden;
+}
+#footer .row:first-child {
+    border-bottom: 1px solid #4c4c4c;
+}
+#footer .col-1 {
+    float: left;
+}
+#footer .col-2 {
+    float: right;
+    text-align: right
+}
 .column h4 {
     text-transform: uppercase;
     font-size: 30px;
@@ -622,23 +661,12 @@ h4 {
 }
 
 .left h4 {
-    color: #4d3c6c;
+    color: #84b82a;
     margin-bottom: 19px;
 }
 
 .right h6 {
     margin-bottom: 48px;
-}
-
-hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-    border-color: #4c4c4c;
 }
 
 .menu ul {
@@ -670,30 +698,30 @@ hr {
 
 .facebook {
     position: absolute;
-    top: 195px;
+    top: 168px;
     right: 44%;
 }
 
 .twitter {
     position: absolute;
-    top: 195px;
+    top: 168px;
     right: 39%;
 }
 
 .youtube {
     position: absolute;
-    top: 195px;
+    top: 168px;
     right: 34%;
 }
 
-.middle p {
+.box p {
     padding-top: 12px;
     color: #535353;
     font-size: 12px;
     text-transform: uppercase;
 }
 
-.middle h5 {
+.box h5 {
     color: #84b82a;
     font-size: 20px;
 }
@@ -704,16 +732,11 @@ hr {
 }
 
 .left h4::before {
-    content: url(images/stopka/tablet.png);
+    content: url(images/stopka/telefon.png) url(images/stopka/komorka.png);
     margin-right: 10px;
 }
 
 .right h4::before {
-    content: url(images/stopka/telefon.png) url(images/stopka/komorka.png);
-    padding: 0 10px;
-}
-
-.middle h4::before {
     content: url(images/stopka/telefon.png);
     padding: 0 10px;
 }
