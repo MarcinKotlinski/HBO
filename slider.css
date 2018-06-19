@@ -6,13 +6,13 @@
 
 .slider .mask {
     width: 400px;
-    height: 477px;
+    height: 485px;
     overflow: hidden;
     position: relative;
 }
 
 .slider ul {
-    width: 99999px;
+    width: 99999px !important;
     float: left;
     transition: margin-left 500ms ease-in-out;
 }
