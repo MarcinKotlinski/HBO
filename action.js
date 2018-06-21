@@ -1,3 +1,4 @@
+
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -41,7 +42,9 @@ function slideGallery() {
 
     // default state, slide[0] active;
     setPosition();
-
+    autoSlide();
+    // delay();
+   
     // slide to next
     function slideLeft() {
         if (currentSlide < slidesNumber - 1) { // -1 cause our first element has index [0]
@@ -82,6 +85,17 @@ function slideGallery() {
         slideItems[currentSlide].classList.add('active');
     }
 
+    function autoSlide(){
+        setTimeout(slideLeft(), 3000);
+    }
+
+    function delay(){
+        $(document).ready(function() {
+            $('.content').hide();
+            $('.content').delay(2000).fadeIn(500);
+            });
+    }
+
     // adding buttons event handlers
     slideGallery.querySelector('.arrow-right').addEventListener("click", function (event) {
         event.preventDefault();
@@ -93,6 +107,7 @@ function slideGallery() {
     });
 }
 
+
 window.onload = function () {
     // dropdown init
     dropInit();
@@ -102,4 +117,8 @@ window.onload = function () {
 
     // slide gallery
     slideGallery();
+
+    autoSlide();
+
+    delay();
 };

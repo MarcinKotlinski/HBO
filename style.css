@@ -160,8 +160,6 @@ a {
 }
 
 #list {
-    margin: 0 auto;
-    width: 1000px;
     position: absolute;
 }
 
@@ -244,25 +242,141 @@ a {
     display: block;
 }
 
-.drop-button + ul {
+.dropdown{
     display: none;
     position: absolute;
-    z-index: 2;
-    top: 80px;
-    left: 0;
-    width: 281px;
+    z-index: 9;
+    width: 240px;
+    height: 587px;
     background: #1a1a1a;
     color: #fff;
 }
 
-.drop-button + ul.active {
+.dropdown-head{
+    padding: 30px;
+}
+
+.dropdown-head h2{
+    color: #4d3c6c;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.fa:active .dropdown  {
     display: block;
 }
 
 #hidden li {
-    float: none;
-    margin: 0;
+    margin: 3px 0;
     border-bottom: 1px solid #555555;
+}
+#hidden li:first-child{
+    border-top: 1px solid #555555;
+}
+#hidden li:first-child::before{
+    content: url(images/dropdown/telewizja.png);
+    margin-right: 5px;
+}
+#hidden li:nth-child(2)::before{
+    content: url(images/dropdown/mysz.png);
+    margin-right: 10px;
+    margin-left: 5px;
+}
+#hidden li:nth-child(3):before{
+    content: url(images/dropdown/telefon.png);
+    margin-right: 9px;
+}
+#hidden li:nth-child(4)::before{
+    content: url(images/dropdown/wifi.png);
+    margin-right: 5px;
+}
+
+#hidden a{
+    color: #bababa;
+}
+
+.dropdown-body{
+    background: #fff;
+    height: 233px;
+    padding: 30px;
+}
+
+.dropdown-body h2{
+    color: #84b82a;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dropdown-body h3{
+    color: #696969;
+    font-size: 14px;
+    text-transform: none;
+    line-height: 20px;
+    margin-bottom: 13px;
+}
+
+.body-content{
+    /* border-bottom: 1px solid #555555; */
+    border-top: 1px solid #555555;
+}
+
+.content-right{
+    float: right;
+    padding: 10px 0;
+}
+
+.content-left{
+    float: left;
+    padding: 10px 0;
+}
+
+.content-right h2,h3,h4,h5{
+    line-height: 20px;
+}
+
+.content-right h2{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.content-right h3{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.content-right h4{
+    color: #828282;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.content-right h5{
+    color: #2c8fbd;
+    font-size: 14px;
+}
+
+.content-right img{
+    padding: 0 10px;
+}
+
+.dropdown-footer{
+    padding: 30px;
+}
+
+.dropdown-footer h2{
+    color: #84b82a;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.dropdown-footer h3{
+    color: #bababa;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: none;
 }
 
 #content {
@@ -384,7 +498,7 @@ h4 {
 
 .vod h3 {
     font-size: 14px;
-    margin-bottom: 259px;
+    margin-bottom: 272px;
     line-height: 122% !important;
 }
 
